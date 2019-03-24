@@ -1,0 +1,2 @@
+c:\users\marco\documents\visual studio 2015\Projects\JandA\JandA\bin\Debug\JandA.exe.config
+c:\users\marco\documents\visual studio 2015\Projects\JandA\JandA\obj\Debug\JandA.vbprojResolveAssemblyReference.cache
