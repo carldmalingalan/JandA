@@ -116,6 +116,12 @@
     <Compile Include="frmMainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmUserControl.Designer.vb">
+      <DependentUpon>frmUserControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserControl.resx">
+      <DependentUpon>frmUserControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

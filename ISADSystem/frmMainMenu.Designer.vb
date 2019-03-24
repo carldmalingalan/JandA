@@ -63,7 +63,7 @@ Partial Class frmMainMenu
         Me.btnMinimize.FlatAppearance.BorderSize = 0
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Font = New System.Drawing.Font("Century Gothic", 12.0!)
-        Me.btnMinimize.Location = New System.Drawing.Point(975, 0)
+        Me.btnMinimize.Location = New System.Drawing.Point(973, 0)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(30, 30)
         Me.btnMinimize.TabIndex = 4
@@ -76,7 +76,7 @@ Partial Class frmMainMenu
         Me.btnExit.FlatAppearance.BorderSize = 0
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 12.0!)
-        Me.btnExit.Location = New System.Drawing.Point(1003, 0)
+        Me.btnExit.Location = New System.Drawing.Point(1004, 0)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(30, 30)
         Me.btnExit.TabIndex = 5

@@ -98,4 +98,8 @@ Public Class frmMainMenu
         OpenPanel(New frmAccounts)
 
     End Sub
+    Private Sub frmLoad(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnHome.PerformClick()
+    End Sub
+
 End Class

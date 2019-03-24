@@ -26,9 +26,9 @@ Partial Class frmAccounts
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAccounts))
         Me.dgvAccountList = New Bunifu.Framework.UI.BunifuCustomDataGrid()
-        Me.btnCreate = New Bunifu.Framework.UI.BunifuThinButton2()
-        Me.btnEdit = New Bunifu.Framework.UI.BunifuThinButton2()
         Me.btnActivate = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.btnEdit = New Bunifu.Framework.UI.BunifuThinButton2()
+        Me.btnCreate = New Bunifu.Framework.UI.BunifuThinButton2()
         CType(Me.dgvAccountList, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -58,30 +58,30 @@ Partial Class frmAccounts
         Me.dgvAccountList.Size = New System.Drawing.Size(760, 349)
         Me.dgvAccountList.TabIndex = 0
         '
-        'btnCreate
+        'btnActivate
         '
-        Me.btnCreate.ActiveBorderThickness = 1
-        Me.btnCreate.ActiveCornerRadius = 20
-        Me.btnCreate.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(203, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.btnCreate.ActiveForecolor = System.Drawing.Color.White
-        Me.btnCreate.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(203, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(239, Byte), Integer))
-        Me.btnCreate.BackColor = System.Drawing.SystemColors.Control
-        Me.btnCreate.BackgroundImage = CType(resources.GetObject("btnCreate.BackgroundImage"), System.Drawing.Image)
-        Me.btnCreate.ButtonText = "Create"
-        Me.btnCreate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCreate.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCreate.ForeColor = System.Drawing.Color.SeaGreen
-        Me.btnCreate.IdleBorderThickness = 1
-        Me.btnCreate.IdleCornerRadius = 20
-        Me.btnCreate.IdleFillColor = System.Drawing.Color.White
-        Me.btnCreate.IdleForecolor = System.Drawing.Color.SeaGreen
-        Me.btnCreate.IdleLineColor = System.Drawing.Color.Orchid
-        Me.btnCreate.Location = New System.Drawing.Point(14, 369)
-        Me.btnCreate.Margin = New System.Windows.Forms.Padding(5)
-        Me.btnCreate.Name = "btnCreate"
-        Me.btnCreate.Size = New System.Drawing.Size(95, 41)
-        Me.btnCreate.TabIndex = 1
-        Me.btnCreate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnActivate.ActiveBorderThickness = 1
+        Me.btnActivate.ActiveCornerRadius = 20
+        Me.btnActivate.ActiveFillColor = System.Drawing.Color.Orchid
+        Me.btnActivate.ActiveForecolor = System.Drawing.Color.White
+        Me.btnActivate.ActiveLineColor = System.Drawing.Color.Orchid
+        Me.btnActivate.BackColor = System.Drawing.SystemColors.Control
+        Me.btnActivate.BackgroundImage = CType(resources.GetObject("btnActivate.BackgroundImage"), System.Drawing.Image)
+        Me.btnActivate.ButtonText = "Enable"
+        Me.btnActivate.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnActivate.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnActivate.ForeColor = System.Drawing.Color.SeaGreen
+        Me.btnActivate.IdleBorderThickness = 1
+        Me.btnActivate.IdleCornerRadius = 20
+        Me.btnActivate.IdleFillColor = System.Drawing.Color.White
+        Me.btnActivate.IdleForecolor = System.Drawing.Color.SeaGreen
+        Me.btnActivate.IdleLineColor = System.Drawing.Color.Orchid
+        Me.btnActivate.Location = New System.Drawing.Point(14, 441)
+        Me.btnActivate.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnActivate.Name = "btnActivate"
+        Me.btnActivate.Size = New System.Drawing.Size(95, 41)
+        Me.btnActivate.TabIndex = 1
+        Me.btnActivate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'btnEdit
         '
@@ -108,30 +108,30 @@ Partial Class frmAccounts
         Me.btnEdit.TabIndex = 1
         Me.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'btnActivate
+        'btnCreate
         '
-        Me.btnActivate.ActiveBorderThickness = 1
-        Me.btnActivate.ActiveCornerRadius = 20
-        Me.btnActivate.ActiveFillColor = System.Drawing.Color.Orchid
-        Me.btnActivate.ActiveForecolor = System.Drawing.Color.White
-        Me.btnActivate.ActiveLineColor = System.Drawing.Color.Orchid
-        Me.btnActivate.BackColor = System.Drawing.SystemColors.Control
-        Me.btnActivate.BackgroundImage = CType(resources.GetObject("btnActivate.BackgroundImage"), System.Drawing.Image)
-        Me.btnActivate.ButtonText = "Enable"
-        Me.btnActivate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnActivate.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnActivate.ForeColor = System.Drawing.Color.SeaGreen
-        Me.btnActivate.IdleBorderThickness = 1
-        Me.btnActivate.IdleCornerRadius = 20
-        Me.btnActivate.IdleFillColor = System.Drawing.Color.White
-        Me.btnActivate.IdleForecolor = System.Drawing.Color.SeaGreen
-        Me.btnActivate.IdleLineColor = System.Drawing.Color.Orchid
-        Me.btnActivate.Location = New System.Drawing.Point(14, 441)
-        Me.btnActivate.Margin = New System.Windows.Forms.Padding(5)
-        Me.btnActivate.Name = "btnActivate"
-        Me.btnActivate.Size = New System.Drawing.Size(95, 41)
-        Me.btnActivate.TabIndex = 1
-        Me.btnActivate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.btnCreate.ActiveBorderThickness = 1
+        Me.btnCreate.ActiveCornerRadius = 20
+        Me.btnCreate.ActiveFillColor = System.Drawing.Color.FromArgb(CType(CType(203, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.btnCreate.ActiveForecolor = System.Drawing.Color.White
+        Me.btnCreate.ActiveLineColor = System.Drawing.Color.FromArgb(CType(CType(203, Byte), Integer), CType(CType(225, Byte), Integer), CType(CType(239, Byte), Integer))
+        Me.btnCreate.BackColor = System.Drawing.SystemColors.Control
+        Me.btnCreate.BackgroundImage = CType(resources.GetObject("btnCreate.BackgroundImage"), System.Drawing.Image)
+        Me.btnCreate.ButtonText = "Create"
+        Me.btnCreate.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnCreate.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCreate.ForeColor = System.Drawing.Color.SeaGreen
+        Me.btnCreate.IdleBorderThickness = 1
+        Me.btnCreate.IdleCornerRadius = 20
+        Me.btnCreate.IdleFillColor = System.Drawing.Color.White
+        Me.btnCreate.IdleForecolor = System.Drawing.Color.SeaGreen
+        Me.btnCreate.IdleLineColor = System.Drawing.Color.Orchid
+        Me.btnCreate.Location = New System.Drawing.Point(14, 369)
+        Me.btnCreate.Margin = New System.Windows.Forms.Padding(5)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(95, 41)
+        Me.btnCreate.TabIndex = 1
+        Me.btnCreate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'frmAccounts
         '
