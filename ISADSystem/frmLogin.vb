@@ -21,9 +21,10 @@
             End If
         End If
     End Sub
-    Private Sub TextBox1_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtPass.KeyDown, txtUser.KeyDown
-        txtUser.Text = txtUser.Text.Replace(" ", "")
-        txtPass.Text = txtPass.Text.Replace(" ", "")
+    Private Sub TextBox1_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtPass.KeyPress, txtUser.KeyPress
+        If e.KeyCode = Keys.Space Then
+            e.SuppressKeyPress = True
+        End If
 
     End Sub
 End Class
