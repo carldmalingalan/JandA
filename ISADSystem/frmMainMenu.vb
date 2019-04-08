@@ -89,7 +89,7 @@ Public Class frmMainMenu
     Private Sub btnInventory_Click(sender As Object, e As EventArgs) Handles btnInventory.Click
         panelChoice.Top = btnInventory.Top
         panelChoice.Height = btnInventory.Height
-        OpenPanel(New frmAccounts)
+        OpenPanel(New frmInventory)
     End Sub
 
     Private Sub btnRecords_Click(sender As Object, e As EventArgs) Handles btnRecords.Click
@@ -98,8 +98,8 @@ Public Class frmMainMenu
         OpenPanel(New frmAccounts)
 
     End Sub
-    Private Sub frmLoad(sender As Object, e As EventArgs) Handles MyBase.Load
-        btnHome.PerformClick()
-    End Sub
 
+    Private Sub panelOpen_Paint(sender As Object, e As PaintEventArgs) Handles panelOpen.Paint
+
+    End Sub
 End Class

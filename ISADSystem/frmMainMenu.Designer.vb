@@ -28,18 +28,18 @@ Partial Class frmMainMenu
         Me.btnMinimize = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.panelItemList = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.panelChoice = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.timeShow = New System.Windows.Forms.Timer(Me.components)
+        Me.timeHide = New System.Windows.Forms.Timer(Me.components)
+        Me.panelOpen = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnLogout = New System.Windows.Forms.Button()
         Me.btnRecords = New System.Windows.Forms.Button()
         Me.btnInventory = New System.Windows.Forms.Button()
         Me.btnAccounts = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.btnMenu = New System.Windows.Forms.PictureBox()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.timeShow = New System.Windows.Forms.Timer(Me.components)
-        Me.timeHide = New System.Windows.Forms.Timer(Me.components)
-        Me.panelOpen = New System.Windows.Forms.Panel()
         Me.panelSystem.SuspendLayout()
         Me.panelItemList.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,7 +63,7 @@ Partial Class frmMainMenu
         Me.btnMinimize.FlatAppearance.BorderSize = 0
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Font = New System.Drawing.Font("Century Gothic", 12.0!)
-        Me.btnMinimize.Location = New System.Drawing.Point(973, 0)
+        Me.btnMinimize.Location = New System.Drawing.Point(975, 0)
         Me.btnMinimize.Name = "btnMinimize"
         Me.btnMinimize.Size = New System.Drawing.Size(30, 30)
         Me.btnMinimize.TabIndex = 4
@@ -76,7 +76,7 @@ Partial Class frmMainMenu
         Me.btnExit.FlatAppearance.BorderSize = 0
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Century Gothic", 12.0!)
-        Me.btnExit.Location = New System.Drawing.Point(1004, 0)
+        Me.btnExit.Location = New System.Drawing.Point(1003, 0)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(30, 30)
         Me.btnExit.TabIndex = 5
@@ -101,6 +101,38 @@ Partial Class frmMainMenu
         Me.panelItemList.Size = New System.Drawing.Size(234, 576)
         Me.panelItemList.TabIndex = 1
         '
+        'panelChoice
+        '
+        Me.panelChoice.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.panelChoice.Location = New System.Drawing.Point(0, 190)
+        Me.panelChoice.Name = "panelChoice"
+        Me.panelChoice.Size = New System.Drawing.Size(8, 55)
+        Me.panelChoice.TabIndex = 5
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.Control
+        Me.Panel1.Location = New System.Drawing.Point(93, 63)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(141, 79)
+        Me.Panel1.TabIndex = 2
+        '
+        'timeShow
+        '
+        Me.timeShow.Interval = 40
+        '
+        'timeHide
+        '
+        Me.timeHide.Interval = 40
+        '
+        'panelOpen
+        '
+        Me.panelOpen.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.panelOpen.Location = New System.Drawing.Point(234, 30)
+        Me.panelOpen.Name = "panelOpen"
+        Me.panelOpen.Size = New System.Drawing.Size(800, 576)
+        Me.panelOpen.TabIndex = 2
+        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.SystemColors.Control
@@ -111,14 +143,6 @@ Partial Class frmMainMenu
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 2
         Me.PictureBox1.TabStop = False
-        '
-        'panelChoice
-        '
-        Me.panelChoice.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.panelChoice.Location = New System.Drawing.Point(0, 190)
-        Me.panelChoice.Name = "panelChoice"
-        Me.panelChoice.Size = New System.Drawing.Size(8, 55)
-        Me.panelChoice.TabIndex = 5
         '
         'btnLogout
         '
@@ -205,30 +229,6 @@ Partial Class frmMainMenu
         Me.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.btnMenu.TabIndex = 3
         Me.btnMenu.TabStop = False
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel1.Location = New System.Drawing.Point(93, 63)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(141, 79)
-        Me.Panel1.TabIndex = 2
-        '
-        'timeShow
-        '
-        Me.timeShow.Interval = 40
-        '
-        'timeHide
-        '
-        Me.timeHide.Interval = 40
-        '
-        'panelOpen
-        '
-        Me.panelOpen.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.panelOpen.Location = New System.Drawing.Point(234, 30)
-        Me.panelOpen.Name = "panelOpen"
-        Me.panelOpen.Size = New System.Drawing.Size(800, 576)
-        Me.panelOpen.TabIndex = 2
         '
         'frmMainMenu
         '

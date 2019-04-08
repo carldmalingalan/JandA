@@ -22,12 +22,27 @@ ISADSystem
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:ISADSystem.My.Resources.Resources.bgLogin">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ISADSystem.My.Resources.Resources.bgLogin1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ISADSystem.My.Resources.Resources.clear">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:ISADSystem.My.Resources.Resources.clear_1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ISADSystem.My.Resources.Resources.clear1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -53,6 +68,11 @@ ISADSystem
 </summary>
 </member>
 <member name="P:ISADSystem.My.Resources.Resources.inventory">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ISADSystem.My.Resources.Resources.J_A_LOGO_SALON_with_name">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

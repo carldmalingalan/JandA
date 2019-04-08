@@ -103,6 +103,12 @@
     <Compile Include="frmHome.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmInventory.Designer.vb">
+      <DependentUpon>frmInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -116,10 +122,10 @@
     <Compile Include="frmMainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmUserControl.Designer.vb">
-      <DependentUpon>frmUserControl.vb</DependentUpon>
+    <Compile Include="frmPasswordChange.Designer.vb">
+      <DependentUpon>frmPasswordChange.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmUserControl.vb">
+    <Compile Include="frmPasswordChange.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -145,14 +151,17 @@
     <EmbeddedResource Include="frmHome.resx">
       <DependentUpon>frmHome.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmInventory.resx">
+      <DependentUpon>frmInventory.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMainMenu.resx">
       <DependentUpon>frmMainMenu.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmUserControl.resx">
-      <DependentUpon>frmUserControl.vb</DependentUpon>
+    <EmbeddedResource Include="frmPasswordChange.resx">
+      <DependentUpon>frmPasswordChange.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -178,6 +187,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\J&amp;A_LOGO_SALON_with name.png" />
+    <None Include="Resources\bgLogin1.jpg" />
+    <None Include="Resources\bgLogin.jpg" />
     <None Include="Resources\logo%282%291.png" />
     <None Include="Resources\logo%282%29.png" />
     <None Include="Resources\logo%281%29.png" />
