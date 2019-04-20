@@ -163,6 +163,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property J_A_LOGO_SALON() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("J&A_LOGO_SALON", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property J_A_LOGO_SALON_NAME() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("J&A_LOGO_SALON_NAME", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property J_A_LOGO_SALON_with_name() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("J&A_LOGO_SALON_with name", resourceCulture)
@@ -246,6 +266,16 @@ Namespace My.Resources
         Friend ReadOnly Property minimize_tab() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("minimize-tab", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property register() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("register", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

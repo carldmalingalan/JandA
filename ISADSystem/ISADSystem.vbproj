@@ -187,6 +187,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\J&amp;A_LOGO_SALON_NAME.png" />
+    <None Include="Resources\register.png" />
+    <None Include="Resources\J&amp;A_LOGO_SALON1.png" />
     <None Include="Resources\J&amp;A_LOGO_SALON_with name.png" />
     <None Include="Resources\bgLogin1.jpg" />
     <None Include="Resources\bgLogin.jpg" />

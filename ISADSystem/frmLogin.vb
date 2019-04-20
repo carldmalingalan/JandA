@@ -7,11 +7,11 @@ Public Class frmLogin
         'txtPass._TextBox.UseSystemPasswordChar = True
     End Sub
 
-    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+    Private Sub btnExit_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
     End Sub
 

@@ -72,6 +72,16 @@ ISADSystem
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:ISADSystem.My.Resources.Resources.J_A_LOGO_SALON">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ISADSystem.My.Resources.Resources.J_A_LOGO_SALON_NAME">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:ISADSystem.My.Resources.Resources.J_A_LOGO_SALON_with_name">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -113,6 +123,11 @@ ISADSystem
 </summary>
 </member>
 <member name="P:ISADSystem.My.Resources.Resources.minimize_tab">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ISADSystem.My.Resources.Resources.register">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
