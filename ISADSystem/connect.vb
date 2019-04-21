@@ -7,7 +7,6 @@ Imports System.Net.Mail
 Imports System.Net
 Imports System.Configuration
 Imports System.Data.SqlTypes
-Imports Excel = Microsoft.Office.Interop.Excel
 
 
 Module connect
@@ -61,12 +60,12 @@ Module connect
 
 
 
-    Public Sub Login(id As String, pass As String, hash As String)
+    Public Sub Login(id As String, pass As String)
         Call ConnectTOSQLServer()
         Dim RequesterID = id
         Dim un As New String(Environment.UserName)
         Fullname = ""
-        strSQL = "select distinct FullName, IsReset,AccountType,accountID from tblAppLogin where Username = '" & id & "' and (Password = '" & hash & "' or DefaultPassword = '" & pass & "')"
+        strSQL = "select distinct FullName, IsReset,AccountType,accountID from tblAppLogin where Username = '" & id & "' and (Password = '' or DefaultPassword = '" & pass & "')"
         Console.WriteLine(strSQL)
         cmd = New SqlCommand(strSQL, Connection)
         reader = cmd.ExecuteReader()

@@ -6,6 +6,31 @@ ISADSystem
 </name>
 </assembly>
 <members>
+<member name="T:ISADSystem.Helpers">
+ <summary>
+ Flat UI Theme
+ Creator: iSynthesis (HF)
+ FIXED BY DUCKIETY FOR NET 4.5.2+ (MAYBE LOWER)!!
+ Version: 1.0.4
+ Date Created: 17/06/2013
+ Date Changed: 26/06/2013
+ UID: 374648
+ For any bugs / errors, PM me.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:ISADSystem.FlatAlertBox.W">
+ <summary>
+ How to use: FlatAlertBox.ShowControl(Kind, String, Interval)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:ISADSystem.FlatAlertBox.H">
+ <summary>
+ How to use: FlatAlertBox.ShowControl(Kind, String, Interval)
+ </summary>
+ <remarks></remarks>
+</member>
 <member name="T:ISADSystem.My.Resources.Resources">
 <summary>
   A strongly-typed resource class, for looking up localized strings, etc.
@@ -73,6 +98,11 @@ ISADSystem
 </summary>
 </member>
 <member name="P:ISADSystem.My.Resources.Resources.J_A_LOGO_SALON">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:ISADSystem.My.Resources.Resources.J_A_LOGO_SALON_1_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

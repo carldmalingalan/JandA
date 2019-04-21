@@ -37,3 +37,4 @@ C:\Users\Marco\Documents\Visual Studio 2015\Projects\ISAD\JandA\ISADSystem\obj\D
 C:\Users\Marco\Documents\Visual Studio 2015\Projects\ISAD\JandA\ISADSystem\bin\Debug\ISADSystem.exe
 C:\Users\Marco\Documents\Visual Studio 2015\Projects\ISAD\JandA\ISADSystem\bin\Debug\ISADSystem.pdb
 C:\Users\Marco\Documents\Visual Studio 2015\Projects\ISAD\JandA\ISADSystem\bin\Debug\ISADSystem.xml
+C:\Users\Marco\Documents\Visual Studio 2015\Projects\ISAD\JandA\ISADSystem\obj\Debug\ISADSystem.FormSkin.resources

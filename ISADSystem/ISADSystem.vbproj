@@ -91,6 +91,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="connect.vb" />
+    <Compile Include="flatUi.Designer.vb">
+      <DependentUpon>flatUi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="flatUi.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="frmAccounts.Designer.vb">
       <DependentUpon>frmAccounts.vb</DependentUpon>
     </Compile>
@@ -145,6 +151,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="flatUi.resx">
+      <DependentUpon>flatUi.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAccounts.resx">
       <DependentUpon>frmAccounts.vb</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +196,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="logo.ico" />
+    <None Include="Resources\J&amp;A_LOGO_SALON%281%29.png" />
     <None Include="Resources\J&amp;A_LOGO_SALON_NAME.png" />
     <None Include="Resources\register.png" />
     <None Include="Resources\J&amp;A_LOGO_SALON1.png" />

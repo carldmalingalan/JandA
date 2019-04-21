@@ -12,7 +12,7 @@ Public Class frmMainMenu
     Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     End Sub
 
-    Private Sub panelSystem_MouseMove(sender As Object, e As MouseEventArgs) Handles panelSystem.MouseMove
+    Private Sub panelSystem_MouseMove(sender As Object, e As MouseEventArgs) 
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
@@ -23,7 +23,7 @@ Public Class frmMainMenu
 
 
 
-    Private Sub btnMenu_Click(sender As Object, e As EventArgs) Handles btnMenu.Click
+    Private Sub btnMenu_Click(sender As Object, e As EventArgs)
         If panelItemList.Width = 234 Then
             timeHide.Enabled = True
         ElseIf panelItemList.Width <> 65 Then
@@ -31,7 +31,7 @@ Public Class frmMainMenu
         End If
     End Sub
 
-    Private Sub timeHide_Tick(sender As Object, e As EventArgs) Handles timeHide.Tick
+    Private Sub timeHide_Tick(sender As Object, e As EventArgs) 
         If panelItemList.Width <= 65 Then
             Me.timeHide.Enabled = False
         Else
@@ -39,7 +39,7 @@ Public Class frmMainMenu
         End If
     End Sub
 
-    Private Sub timeShow_Tick(sender As Object, e As EventArgs) Handles timeShow.Tick
+    Private Sub timeShow_Tick(sender As Object, e As EventArgs) 
         If panelItemList.Width >= 234 Then
             Me.timeShow.Enabled = False
         Else
@@ -48,15 +48,15 @@ Public Class frmMainMenu
     End Sub
 
 
-    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+    Private Sub btnExit_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub btnMinimize_Click(sender As Object, e As EventArgs) Handles btnMinimize.Click
+    Private Sub btnMinimize_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs)
         Me.Close()
         frmLogin.Show()
     End Sub
@@ -74,32 +74,32 @@ Public Class frmMainMenu
         fh.Show()
     End Sub
 
-    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+    Private Sub btnHome_Click(sender As Object, e As EventArgs)
         panelChoice.Top = btnHome.Top
         panelChoice.Height = btnHome.Height
         OpenPanel(New frmHome)
     End Sub
 
-    Private Sub btnAccounts_Click(sender As Object, e As EventArgs) Handles btnAccounts.Click
+    Private Sub btnAccounts_Click(sender As Object, e As EventArgs)
         panelChoice.Top = btnAccounts.Top
         panelChoice.Height = btnAccounts.Height
         OpenPanel(New frmAccounts)
     End Sub
 
-    Private Sub btnInventory_Click(sender As Object, e As EventArgs) Handles btnInventory.Click
+    Private Sub btnInventory_Click(sender As Object, e As EventArgs)
         panelChoice.Top = btnInventory.Top
         panelChoice.Height = btnInventory.Height
         OpenPanel(New frmInventory)
     End Sub
 
-    Private Sub btnRecords_Click(sender As Object, e As EventArgs) Handles btnRecords.Click
+    Private Sub btnRecords_Click(sender As Object, e As EventArgs)
         panelChoice.Top = btnRecords.Top
         panelChoice.Height = btnRecords.Height
         OpenPanel(New frmAccounts)
 
     End Sub
 
-    Private Sub panelOpen_Paint(sender As Object, e As PaintEventArgs) Handles panelOpen.Paint
+    Private Sub panelOpen_Paint(sender As Object, e As PaintEventArgs) 
 
     End Sub
 End Class
