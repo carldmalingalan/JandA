@@ -23,7 +23,6 @@ Partial Class frmMainMenu
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMainMenu))
-        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.panelOpen = New System.Windows.Forms.Panel()
         Me.panelSystem = New System.Windows.Forms.Panel()
         Me.FlatTextBox1 = New ISADSystem.FlatTextBox()
@@ -36,27 +35,18 @@ Partial Class frmMainMenu
         Me.btnInventory = New System.Windows.Forms.Button()
         Me.btnAccounts = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
-        Me.FlatContextMenuStrip2 = New ISADSystem.FlatContextMenuStrip()
         Me.panelSystem.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.FlatGroupBox1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel1
-        '
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 635)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1034, 36)
-        Me.Panel1.TabIndex = 0
-        '
         'panelOpen
         '
         Me.panelOpen.Dock = System.Windows.Forms.DockStyle.Fill
         Me.panelOpen.Location = New System.Drawing.Point(232, 65)
         Me.panelOpen.Name = "panelOpen"
-        Me.panelOpen.Size = New System.Drawing.Size(802, 570)
+        Me.panelOpen.Size = New System.Drawing.Size(802, 606)
         Me.panelOpen.TabIndex = 5
         '
         'panelSystem
@@ -92,7 +82,7 @@ Partial Class frmMainMenu
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 65)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(232, 570)
+        Me.Panel2.Size = New System.Drawing.Size(232, 606)
         Me.Panel2.TabIndex = 4
         '
         'FlatGroupBox1
@@ -111,7 +101,7 @@ Partial Class frmMainMenu
         Me.FlatGroupBox1.Location = New System.Drawing.Point(0, 0)
         Me.FlatGroupBox1.Name = "FlatGroupBox1"
         Me.FlatGroupBox1.ShowText = True
-        Me.FlatGroupBox1.Size = New System.Drawing.Size(231, 570)
+        Me.FlatGroupBox1.Size = New System.Drawing.Size(231, 606)
         Me.FlatGroupBox1.TabIndex = 5
         '
         'PictureBox3
@@ -208,14 +198,6 @@ Partial Class frmMainMenu
         Me.btnHome.Text = "HOME"
         Me.btnHome.UseVisualStyleBackColor = True
         '
-        'FlatContextMenuStrip2
-        '
-        Me.FlatContextMenuStrip2.Font = New System.Drawing.Font("Segoe UI", 8.0!)
-        Me.FlatContextMenuStrip2.ForeColor = System.Drawing.Color.White
-        Me.FlatContextMenuStrip2.Name = "FlatContextMenuStrip2"
-        Me.FlatContextMenuStrip2.ShowImageMargin = False
-        Me.FlatContextMenuStrip2.Size = New System.Drawing.Size(128, 26)
-        '
         'frmMainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -223,7 +205,6 @@ Partial Class frmMainMenu
         Me.ClientSize = New System.Drawing.Size(1034, 671)
         Me.Controls.Add(Me.panelOpen)
         Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.panelSystem)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -237,8 +218,6 @@ Partial Class frmMainMenu
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents panelOpen As Panel
     Friend WithEvents panelSystem As Panel
     Friend WithEvents FlatTextBox1 As FlatTextBox
@@ -251,5 +230,4 @@ Partial Class frmMainMenu
     Friend WithEvents btnInventory As Button
     Friend WithEvents btnAccounts As Button
     Friend WithEvents btnHome As Button
-    Friend WithEvents FlatContextMenuStrip2 As FlatContextMenuStrip
 End Class

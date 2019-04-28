@@ -11,12 +11,12 @@ Public Class frmPasswordChange
     Private Shared Sub SendMessage(ByVal hWnd As System.IntPtr, ByVal wMsg As Integer, ByVal wParam As Integer, ByVal lParam As Integer)
     End Sub
 
-    Private Sub panelSystem_MouseMove(sender As Object, e As MouseEventArgs) Handles panelSystem.MouseMove
+    Private Sub panelSystem_MouseMove(sender As Object, e As MouseEventArgs)
         ReleaseCapture()
         SendMessage(Me.Handle, &H112&, &HF012&, 0)
     End Sub
 
-    Private Sub txtPassword1_OnValueChanged(sender As Object, e As EventArgs) Handles txtPass2.OnValueChanged
+    Private Sub txtPassword1_OnValueChanged(sender As Object, e As EventArgs)
         If (txtPass1.Text = txtPass2.Text) Then
             ErrorProvider1.SetError(txtPass2, "Passwords do not match!")
         ElseIf (txtPass1.Text <> "" And txtPass2.Text = "") Then
@@ -27,7 +27,7 @@ Public Class frmPasswordChange
     End Sub
 
 
-    Private Sub txtPass2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtPass2.KeyPress, txtPass1.KeyPress
+    Private Sub txtPass2_KeyPress(sender As Object, e As KeyPressEventArgs)
 
         Select Case e.KeyChar
 
@@ -51,7 +51,7 @@ Public Class frmPasswordChange
 
 
 
-    Private Sub TextBox1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles txtPass2.KeyDown
+    Private Sub TextBox1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs)
         If e.KeyValue = Keys.Enter Then
             hashp = getSHA1Hash(txtPass2.Text)
         End If
@@ -94,7 +94,7 @@ Public Class frmPasswordChange
         End If
     End Sub
 
-    Private Sub btnChangePass_Click(sender As Object, e As EventArgs) Handles btnChangePass.Click
+    Private Sub btnChangePass_Click(sender As Object, e As EventArgs)
         Dim ask = MsgBox("Continue to save?", MsgBoxStyle.Information + vbYesNo, "J&A Inventory Management")
         If (ask = vbYes) Then
             If (txtPass1.Text = txtPass2.Text) Then

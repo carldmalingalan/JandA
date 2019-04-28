@@ -5,7 +5,7 @@ Imports System.Text
 Public Class frmLogin
 
     Private Const SaltSize As Integer = 31
-    Dim dbPW As String = TextBox1.Text
+    Dim dbPW As String
     Dim dbSalt = CreateNewSalt(SaltSize)
     ' eg: "dsEGWpJpwfAOvdRZyUo9rA=="
 
@@ -18,27 +18,27 @@ Public Class frmLogin
 
     End Sub
 
-    Private Sub txtPass_OnValueChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-        txtUsername.Text = SaltedPWHash
+    Private Sub txtPass_OnValueChanged(sender As Object, e As EventArgs) Handles txtPassword.OnValueChanged
+        txtPassword.Text = SaltedPWHash
     End Sub
     Private Sub btnLogin_Click(sender As Object, e As EventArgs)
-        'If (txtUser.Text.Replace("'", "") <> "" And txtPass.Text.Replace("'", "") <> "") Then
-        '    Call Login(txtUser.Text.Replace("'", ""), txtPass.Text.Replace("'", ""), hashPass)
-        If (Fullname = "") Then
-            MsgBox("Invalid access!", MsgBoxStyle.Critical, "J&A Inventory Management")
-        Else
-            If (isReset = "Yes") Then
-                Dim ask = MsgBox("Hi! " + Fullname + ". Your account has been reset. You will be neeeding to change your password to be able to access the app. Would you like to proceed?", MsgBoxStyle.Information + vbYesNo, "J&A Inventory Management")
-                If (ask = vbYes) Then
-                    frmPasswordChange.Show()
+        If (txtUsername.Text.Replace("'", "") <> "" And txtUsername.Text.Replace("'", "") <> "") Then
+            Call Login(txtUsername.Text.Replace("'", ""), SaltedPWHash)
+            If (Fullname = "") Then
+                MsgBox("Invalid access!", MsgBoxStyle.Critical, "J&A Inventory Management")
+            Else
+                If (isReset = "Yes") Then
+                    Dim ask = MsgBox("Hi! " + Fullname + ". Your account has been reset. You will be neeeding to change your password to be able to access the app. Would you like to proceed?", MsgBoxStyle.Information + vbYesNo, "J&A Inventory Management")
+                    If (ask = vbYes) Then
+                        frmPasswordChange.Show()
+                        Me.Close()
+                    End If
+                ElseIf (isReset = "No") Then
+                    frmMainMenu.Show()
                     Me.Close()
                 End If
-            ElseIf (isReset = "No") Then
-                frmMainMenu.Show()
-                Me.Close()
             End If
         End If
-        'End If
 
     End Sub
 

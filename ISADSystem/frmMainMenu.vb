@@ -21,33 +21,6 @@ Public Class frmMainMenu
 
     End Sub
 
-
-
-    Private Sub btnMenu_Click(sender As Object, e As EventArgs)
-        If panelItemList.Width = 234 Then
-            timeHide.Enabled = True
-        ElseIf panelItemList.Width <> 65 Then
-            timeShow.Enabled = True
-        End If
-    End Sub
-
-    Private Sub timeHide_Tick(sender As Object, e As EventArgs) 
-        If panelItemList.Width <= 65 Then
-            Me.timeHide.Enabled = False
-        Else
-            Me.panelItemList.Width = panelItemList.Width - 20
-        End If
-    End Sub
-
-    Private Sub timeShow_Tick(sender As Object, e As EventArgs) 
-        If panelItemList.Width >= 234 Then
-            Me.timeShow.Enabled = False
-        Else
-            Me.panelItemList.Width = panelItemList.Width + 20
-        End If
-    End Sub
-
-
     Private Sub btnExit_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
