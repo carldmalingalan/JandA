@@ -18,3 +18,7 @@ C:\Users\Marco\Documents\Visual Studio 2015\Projects\InventorySystem\InventorySy
 C:\Users\Marco\Documents\Visual Studio 2015\Projects\InventorySystem\InventorySystem\obj\Debug\InventorySystem.frmUserManage.resources
 C:\Users\Marco\Documents\Visual Studio 2015\Projects\InventorySystem\InventorySystem\obj\Debug\InventorySystem.frmInventory.resources
 C:\Users\Marco\Documents\Visual Studio 2015\Projects\InventorySystem\InventorySystem\obj\Debug\InventorySystem.frmItemManagement.resources
+C:\Users\Marco\Documents\Visual Studio 2015\Projects\gitVersionFinal\JandA\InventorySystem\InventorySystem\bin\Debug\InventorySystem.exe.config
+C:\Users\Marco\Documents\Visual Studio 2015\Projects\gitVersionFinal\JandA\InventorySystem\InventorySystem\obj\Debug\InventorySystem.exe
+C:\Users\Marco\Documents\Visual Studio 2015\Projects\gitVersionFinal\JandA\InventorySystem\InventorySystem\obj\Debug\InventorySystem.xml
+C:\Users\Marco\Documents\Visual Studio 2015\Projects\gitVersionFinal\JandA\InventorySystem\InventorySystem\obj\Debug\InventorySystem.pdb
