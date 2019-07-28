@@ -93,6 +93,8 @@
             Call PasswordSetter(GetHash(txtPassword2.Text), AccountID)
             MsgBox("Password has been successfully changed!", MsgBoxStyle.Information, "Chronic Care Records System")
             frmMenu.Show()
+            Dim methodName$ = System.Reflection.MethodBase.GetCurrentMethod().Name
+            Call AddAppLogs(AccountName, methodName)
             Me.Close()
         End If
 

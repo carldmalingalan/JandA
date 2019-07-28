@@ -192,7 +192,19 @@ Module mdlConnect
         Call DisConnectSQLServer()
     End Sub
 
-    Public Sub AddItem(itemname As String, itemquantity As Decimal, description As String, picture As Image)
+    Public Sub AddAppLogs(username As String, buttonname As String)
+        Call ConnectTOSQLServer()
+        strSQL = "insert into tblAppLogs select getdate(), @Username, @buttonname"
+        Using Connection As New SqlConnection(sqlConnectionString),
+                        cmd As New SqlCommand(strSQL, Connection)
+            cmd.Parameters.AddWithValue("@Username", SqlDbType.VarChar).Value = username
+            cmd.Parameters.AddWithValue("@buttonname", SqlDbType.VarChar).Value = buttonname
 
+            Connection.Open()
+            cmd.ExecuteNonQuery()
+            Console.WriteLine(strSQL)
+        End Using
+        Call DisConnectSQLServer()
     End Sub
+
 End Module

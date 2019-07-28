@@ -85,7 +85,7 @@
         End If
     End Sub
 
-    Private Sub btnCreate_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
+    Private Sub btnCreateUser_Click(sender As Object, e As EventArgs) Handles btnCreate.Click
         If (txtLastname.Text <> "" And txtLastname.Text <> "" And txtUsername.Text <> "" And cboAccountType.Text <> "") Then
             If (edit = 0) Then
                 Dim ask = MsgBox("Do you want to create this accounts?", MsgBoxStyle.Information + vbYesNo, Brandname)
@@ -95,6 +95,8 @@
                         Call CreateAccount(txtFirstname.Text, txtLastname.Text, txtUsername.Text, cboAccountType.Text)
                         MsgBox("Account has been created.", MsgBoxStyle.Information, Brandname)
                         frmAccounts.btnEdit.Enabled = True
+                        Dim methodName$ = System.Reflection.MethodBase.GetCurrentMethod().Name
+                        Call AddAppLogs(AccountName, methodName)
                         Me.Close()
                     End If
                 Else
@@ -108,6 +110,8 @@
                         Call UpdateAccount(txtFirstname.Text, txtLastname.Text, txtUsername.Text, cboAccountType.Text, UsernameOrig)
                         MsgBox("Account has been updated.", MsgBoxStyle.Information, Brandname)
                         frmAccounts.btnEdit.Enabled = True
+                        Dim methodName$ = System.Reflection.MethodBase.GetCurrentMethod().Name
+                        Call AddAppLogs(AccountName, methodName)
                         Me.Close()
                     Else
                         ErrorProvider1.SetError(txtUsername, "Username is already taken!")

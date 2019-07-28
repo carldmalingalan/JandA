@@ -21,7 +21,7 @@ Public Class frmItemManagement
         End Try
     End Sub
 
-    Private Sub btnProceed_Click(sender As Object, e As EventArgs) Handles btnProceed.Click
+    Private Sub btnProceedCreateItem_Click(sender As Object, e As EventArgs) Handles btnProceed.Click
 
         If (txtItemName.Text <> "" And txtItemQuantity.Text <> "" And IsNumeric(txtItemQuantity.Text)) Then
             Dim ask = MsgBox("Are you sure you want to save this to the inventory?", MsgBoxStyle.Exclamation + vbYesNo, ProductName)
@@ -56,7 +56,8 @@ Public Class frmItemManagement
                     MsgBox("Item has been successfully added to the inventory.", MsgBoxStyle.Information, ProductName)
                     Connection.Close()
                     Console.WriteLine(sql)
-
+                    Dim methodName$ = System.Reflection.MethodBase.GetCurrentMethod().Name
+                    Call AddAppLogs(AccountName, methodName)
                 End Using
 
                 Call DisConnectSQLServer()

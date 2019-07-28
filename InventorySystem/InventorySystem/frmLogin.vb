@@ -12,6 +12,8 @@
                 Else
                     frmMenu.Show()
                 End If
+                Dim methodName$ = System.Reflection.MethodBase.GetCurrentMethod().Name
+                Call AddAppLogs(AccountName, methodName)
                 Me.Close()
             Else
                 MsgBox("Invalid Credentials!", MsgBoxStyle.Exclamation, Brandname)

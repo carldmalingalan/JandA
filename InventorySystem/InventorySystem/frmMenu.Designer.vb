@@ -24,11 +24,13 @@ Partial Class frmMenu
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMenu))
         Me.FormSkin1 = New InventorySystem.FormSkin()
+        Me.btnClose = New Bunifu.Framework.UI.BunifuImageButton()
         Me.btnUtilities = New Bunifu.Framework.UI.BunifuTileButton()
         Me.btnInventory = New Bunifu.Framework.UI.BunifuTileButton()
         Me.btnRecords = New Bunifu.Framework.UI.BunifuTileButton()
         Me.btnAccounts = New Bunifu.Framework.UI.BunifuTileButton()
         Me.FormSkin1.SuspendLayout()
+        CType(Me.btnClose, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'FormSkin1
@@ -36,6 +38,7 @@ Partial Class frmMenu
         Me.FormSkin1.BackColor = System.Drawing.Color.White
         Me.FormSkin1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.FormSkin1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.FormSkin1.Controls.Add(Me.btnClose)
         Me.FormSkin1.Controls.Add(Me.btnUtilities)
         Me.FormSkin1.Controls.Add(Me.btnInventory)
         Me.FormSkin1.Controls.Add(Me.btnRecords)
@@ -50,6 +53,20 @@ Partial Class frmMenu
         Me.FormSkin1.Size = New System.Drawing.Size(618, 296)
         Me.FormSkin1.TabIndex = 0
         Me.FormSkin1.Text = "J and A"
+        '
+        'btnClose
+        '
+        Me.btnClose.BackColor = System.Drawing.Color.Transparent
+        Me.btnClose.Image = CType(resources.GetObject("btnClose.Image"), System.Drawing.Image)
+        Me.btnClose.ImageActive = Nothing
+        Me.btnClose.InitialImage = Nothing
+        Me.btnClose.Location = New System.Drawing.Point(590, 12)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(16, 17)
+        Me.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.btnClose.TabIndex = 1
+        Me.btnClose.TabStop = False
+        Me.btnClose.Zoom = 10
         '
         'btnUtilities
         '
@@ -140,6 +157,7 @@ Partial Class frmMenu
         Me.Text = "J and A"
         Me.TransparencyKey = System.Drawing.Color.Fuchsia
         Me.FormSkin1.ResumeLayout(False)
+        CType(Me.btnClose, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -149,4 +167,5 @@ Partial Class frmMenu
     Friend WithEvents btnInventory As Bunifu.Framework.UI.BunifuTileButton
     Friend WithEvents btnRecords As Bunifu.Framework.UI.BunifuTileButton
     Friend WithEvents btnAccounts As Bunifu.Framework.UI.BunifuTileButton
+    Friend WithEvents btnClose As Bunifu.Framework.UI.BunifuImageButton
 End Class
