@@ -27,10 +27,11 @@ Partial Class frmInventory
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmInventory))
         Me.FormSkin1 = New InventorySystem.FormSkin()
         Me.dgvItemList = New Bunifu.Framework.UI.BunifuCustomDataGrid()
+        Me.dtpItemListing = New System.Windows.Forms.DateTimePicker()
+        Me.txtUsername = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.btnEdit = New System.Windows.Forms.PictureBox()
         Me.btnAdd = New System.Windows.Forms.PictureBox()
-        Me.txtUsername = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.dtpItemListing = New System.Windows.Forms.DateTimePicker()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.FormSkin1.SuspendLayout()
         CType(Me.dgvItemList, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnEdit, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -42,11 +43,12 @@ Partial Class frmInventory
         Me.FormSkin1.BackColor = System.Drawing.Color.White
         Me.FormSkin1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(73, Byte), Integer))
         Me.FormSkin1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(58, Byte), Integer), CType(CType(60, Byte), Integer))
+        Me.FormSkin1.Controls.Add(Me.Button1)
+        Me.FormSkin1.Controls.Add(Me.dgvItemList)
         Me.FormSkin1.Controls.Add(Me.dtpItemListing)
         Me.FormSkin1.Controls.Add(Me.txtUsername)
         Me.FormSkin1.Controls.Add(Me.btnEdit)
         Me.FormSkin1.Controls.Add(Me.btnAdd)
-        Me.FormSkin1.Controls.Add(Me.dgvItemList)
         Me.FormSkin1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FormSkin1.FlatColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.FormSkin1.Font = New System.Drawing.Font("Segoe UI", 12.0!)
@@ -62,33 +64,61 @@ Partial Class frmInventory
         '
         Me.dgvItemList.AllowUserToAddRows = False
         Me.dgvItemList.AllowUserToDeleteRows = False
-        Me.dgvItemList.AllowUserToResizeRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.dgvItemList.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvItemList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvItemList.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(121, Byte), Integer), CType(CType(125, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.dgvItemList.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.dgvItemList.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.dgvItemList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 12.0!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvItemList.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvItemList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvItemList.DoubleBuffered = True
-        Me.dgvItemList.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.dgvItemList.EnableHeadersVisualStyles = False
-        Me.dgvItemList.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(89, Byte), Integer), CType(CType(54, Byte), Integer), CType(CType(54, Byte), Integer))
-        Me.dgvItemList.HeaderForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.dgvItemList.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.dgvItemList.HeaderForeColor = System.Drawing.Color.White
         Me.dgvItemList.Location = New System.Drawing.Point(12, 109)
         Me.dgvItemList.Name = "dgvItemList"
         Me.dgvItemList.ReadOnly = True
         Me.dgvItemList.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgvItemList.RowHeadersVisible = False
+        Me.dgvItemList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvItemList.Size = New System.Drawing.Size(901, 422)
-        Me.dgvItemList.TabIndex = 1
+        Me.dgvItemList.TabIndex = 46
+        '
+        'dtpItemListing
+        '
+        Me.dtpItemListing.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.dtpItemListing.Location = New System.Drawing.Point(582, 76)
+        Me.dtpItemListing.Name = "dtpItemListing"
+        Me.dtpItemListing.Size = New System.Drawing.Size(259, 27)
+        Me.dtpItemListing.TabIndex = 41
+        '
+        'txtUsername
+        '
+        Me.txtUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(73, Byte), Integer))
+        Me.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 11.0!)
+        Me.txtUsername.ForeColor = System.Drawing.Color.White
+        Me.txtUsername.HintForeColor = System.Drawing.Color.Silver
+        Me.txtUsername.HintText = "Search Product"
+        Me.txtUsername.isPassword = False
+        Me.txtUsername.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtUsername.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.txtUsername.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.txtUsername.LineThickness = 3
+        Me.txtUsername.Location = New System.Drawing.Point(12, 63)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(191, 39)
+        Me.txtUsername.TabIndex = 40
+        Me.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'btnEdit
         '
@@ -112,33 +142,16 @@ Partial Class frmInventory
         Me.btnAdd.TabIndex = 39
         Me.btnAdd.TabStop = False
         '
-        'txtUsername
+        'Button1
         '
-        Me.txtUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(60, Byte), Integer), CType(CType(70, Byte), Integer), CType(CType(73, Byte), Integer))
-        Me.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.txtUsername.ForeColor = System.Drawing.Color.White
-        Me.txtUsername.HintForeColor = System.Drawing.Color.Silver
-        Me.txtUsername.HintText = "Search Product"
-        Me.txtUsername.isPassword = False
-        Me.txtUsername.LineFocusedColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.txtUsername.LineIdleColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.txtUsername.LineMouseHoverColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.txtUsername.LineThickness = 3
-        Me.txtUsername.Location = New System.Drawing.Point(12, 74)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(191, 28)
-        Me.txtUsername.TabIndex = 40
-        Me.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'dtpItemListing
-        '
-        Me.dtpItemListing.Font = New System.Drawing.Font("Segoe UI", 11.0!)
-        Me.dtpItemListing.Location = New System.Drawing.Point(582, 76)
-        Me.dtpItemListing.Name = "dtpItemListing"
-        Me.dtpItemListing.Size = New System.Drawing.Size(259, 27)
-        Me.dtpItemListing.TabIndex = 41
+        Me.Button1.BackColor = System.Drawing.Color.Red
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Location = New System.Drawing.Point(898, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(15, 15)
+        Me.Button1.TabIndex = 47
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'frmInventory
         '
@@ -161,9 +174,10 @@ Partial Class frmInventory
     End Sub
 
     Friend WithEvents FormSkin1 As FormSkin
-    Friend WithEvents dgvItemList As Bunifu.Framework.UI.BunifuCustomDataGrid
     Friend WithEvents btnEdit As PictureBox
     Friend WithEvents btnAdd As PictureBox
     Friend WithEvents dtpItemListing As DateTimePicker
     Friend WithEvents txtUsername As Bunifu.Framework.UI.BunifuMaterialTextbox
+    Friend WithEvents dgvItemList As Bunifu.Framework.UI.BunifuCustomDataGrid
+    Friend WithEvents Button1 As Button
 End Class

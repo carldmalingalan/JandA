@@ -23,6 +23,7 @@ Partial Class frmItemManagement
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmItemManagement))
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.FormSkin1 = New InventorySystem.FormSkin()
         Me.btnProceed = New InventorySystem.FlatButton()
         Me.btnBrowse = New InventorySystem.FlatButton()
@@ -31,10 +32,13 @@ Partial Class frmItemManagement
         Me.txtItemDescription = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.txtItemQuantity = New Bunifu.Framework.UI.BunifuMaterialTextbox()
         Me.txtItemName = New Bunifu.Framework.UI.BunifuMaterialTextbox()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.FormSkin1.SuspendLayout()
         CType(Me.pbItemPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'FormSkin1
         '
@@ -69,7 +73,7 @@ Partial Class frmItemManagement
         Me.btnProceed.Name = "btnProceed"
         Me.btnProceed.Rounded = False
         Me.btnProceed.Size = New System.Drawing.Size(291, 33)
-        Me.btnProceed.TabIndex = 44
+        Me.btnProceed.TabIndex = 45
         Me.btnProceed.Text = "PROCEED"
         Me.btnProceed.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
         '
@@ -86,6 +90,7 @@ Partial Class frmItemManagement
         Me.btnBrowse.TabIndex = 44
         Me.btnBrowse.Text = "Browse"
         Me.btnBrowse.TextColor = System.Drawing.Color.FromArgb(CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.btnBrowse.Visible = False
         '
         'pbItemPicture
         '
@@ -95,6 +100,7 @@ Partial Class frmItemManagement
         Me.pbItemPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbItemPicture.TabIndex = 43
         Me.pbItemPicture.TabStop = False
+        Me.pbItemPicture.Visible = False
         '
         'cboItemClassification
         '
@@ -111,7 +117,7 @@ Partial Class frmItemManagement
         Me.cboItemClassification.Location = New System.Drawing.Point(13, 231)
         Me.cboItemClassification.Name = "cboItemClassification"
         Me.cboItemClassification.Size = New System.Drawing.Size(420, 24)
-        Me.cboItemClassification.TabIndex = 42
+        Me.cboItemClassification.TabIndex = 44
         '
         'txtItemDescription
         '
@@ -130,7 +136,8 @@ Partial Class frmItemManagement
         Me.txtItemDescription.Margin = New System.Windows.Forms.Padding(4)
         Me.txtItemDescription.Name = "txtItemDescription"
         Me.txtItemDescription.Size = New System.Drawing.Size(420, 31)
-        Me.txtItemDescription.TabIndex = 41
+        Me.txtItemDescription.TabIndex = 43
+        Me.txtItemDescription.TabStop = False
         Me.txtItemDescription.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'txtItemQuantity
@@ -150,7 +157,8 @@ Partial Class frmItemManagement
         Me.txtItemQuantity.Margin = New System.Windows.Forms.Padding(4)
         Me.txtItemQuantity.Name = "txtItemQuantity"
         Me.txtItemQuantity.Size = New System.Drawing.Size(420, 31)
-        Me.txtItemQuantity.TabIndex = 41
+        Me.txtItemQuantity.TabIndex = 42
+        Me.txtItemQuantity.TabStop = False
         Me.txtItemQuantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'txtItemName
@@ -171,11 +179,8 @@ Partial Class frmItemManagement
         Me.txtItemName.Name = "txtItemName"
         Me.txtItemName.Size = New System.Drawing.Size(420, 31)
         Me.txtItemName.TabIndex = 41
+        Me.txtItemName.TabStop = False
         Me.txtItemName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'frmItemManagement
         '
